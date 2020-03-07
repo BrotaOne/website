@@ -1,0 +1,224 @@
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eee;
+}
+
+*:focus {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li,
+dl dd {
+  float: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+input {
+  outline: none;
+}
+
+input:focus {
+  outline-offset: 0;
+}
+
+.fengefu::before {
+  content: "|";
+  color: white;
+  font-size: 10px;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.w12 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.w10 {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.w12::after,
+.w10::after {
+  content: ".";
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.clearfloat::after {
+  content: ".";
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+/* 通用部分结束 */
+
+header {
+  background-color: #3d444c;
+  height: 54px;
+  margin-bottom: 30px;
+}
+
+header .logo {
+  background: url(牛客网logo.png) no-repeat;
+  background-size: 147px 42px;
+  display: inline-block;
+  width: 147px;
+  height: 54px;
+  margin-top: 6px;
+}
+
+/* header::after {
+  content: ".";
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+} */
+
+.navbar li {
+  float: left;
+}
+
+header a {
+  display: inline-block;
+  height: 54px;
+  line-height: 53px;
+  padding: 0 10px;
+  font-size: 16px;
+  text-align: center;
+  color: #ccc;
+}
+
+header li:hover {
+  background-color: #31363d;
+}
+
+.navbar li:nth-of-type(3) {
+  position: relative;
+}
+
+.navbar li:nth-of-type(3) span {
+  position: absolute;
+  color: white;
+  background-color: red;
+  font-size: 3px;
+  transform: scale(0.8);
+  top: 3px;
+  right: 10px;
+}
+
+.othernav {
+  line-height: 53px;
+}
+
+.othernav li a {
+  color: #ccc;
+}
+
+.searchnav {
+  height: 54px;
+  background-color: #3d444c;
+  font-size: 14px;
+}
+
+.othernav .search {
+  margin: 10px 0;
+  background-color: #31363e;
+  width: 260px;
+  position: relative;
+  height: 34px;
+  overflow: hidden;
+}
+
+.othernav input {
+  color: #fff;
+  background-color: #31363e;
+  border: none;
+  height: 22px;
+  width: 80%;
+  padding: 5px;
+  outline: none;
+}
+
+.othernav .search-btn {
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  padding: 0 5px;
+  color: white;
+  background-color: green;
+}
+
+.othernav a {
+  font-size: 14px;
+}
+/* header结束 */
+
+/* 左栏 */
+.left {
+  width: 690px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.one {
+  background-color: #fff;
+}
+
+.img {
+  position: relative;
+  height: 91px;
+  overflow: hidden;
+}
+
+.imgmask {
+  width: 100%;
+  height: 91px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 3;
+}
+
+.backimg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: perspective(1px) translate(-50%, -50%);
+}
+
+dl {
+  padding: 15px 18px;
+}
+/* 左栏结束 */
+
+/* 右栏 */
+.right {
+  width: 300px;
+  height: 100px;
+}
+/* 右栏结束 */
